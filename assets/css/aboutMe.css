@@ -1,0 +1,106 @@
+/* Grundlegendes Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Anpassen basierend auf Ihrer main.css */
+    background-color: #f2f2f2; /* Hintergrundfarbe der Seite */
+    color: #333; /* Haupttextfarbe */
+}
+
+/* Header-Styling */
+header {
+    background: #2e3842; /* Hintergrundfarbe des Headers */
+    color: #fff; /* Textfarbe */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav#nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #333; /* Hintergrundfarbe der Navigation */
+}
+
+nav#nav ul {
+    list-style: none;
+}
+
+nav#nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav#nav ul li a {
+    color: #fff; /* Linkfarbe */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Über mich Sektion */
+.about-section {
+    background-color: #fff; /* Hintergrundfarbe für den Abschnitt */
+    padding: 40px;
+    margin: 20px 0;
+}
+
+/* Karten-Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.column {
+    flex: 0 0 33%; /* Anpassen für Responsive Design */
+    max-width: 33%; /* Anpassen für Responsive Design */
+    padding: 0 15px;
+}
+
+.card {
+    background: #ffffff;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px; /* Leicht abgerundete Ecken */
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .container {
+    padding: 20px;
+}
+
+/* Button-Styling */
+.button {
+    background-color: #4CAF50; /* Grüner Button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Leicht abgerundete Ecken für Buttons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+  
