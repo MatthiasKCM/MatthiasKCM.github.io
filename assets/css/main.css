@@ -20,6 +20,18 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;}
 
+	#header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+	
+	#main {
+		padding-top: 60px; /* Höhe des Headers anpassen */
+	}
+	
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
